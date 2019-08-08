@@ -12,7 +12,6 @@ namespace Calculator
         {
             int c = a + b;
             return c;
-
         }
     }
 }
