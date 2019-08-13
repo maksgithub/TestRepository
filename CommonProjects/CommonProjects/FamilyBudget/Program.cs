@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Window_Price_Calculator
+namespace FamilyBudget
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" Hello wrold");
         }
     }
 }
