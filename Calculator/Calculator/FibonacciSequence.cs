@@ -8,16 +8,16 @@ namespace Calculator
 {
     class FibonacciSequence
     {
-        readonly List<int> febSeq;
+        readonly List<int> _fibSeq;
         public FibonacciSequence(int length)
         {
-            febSeq = new List<int>(length);
+            _fibSeq = new List<int>(length);
         }
 
 
         public void FibonacciPrint(List<int> febSeq, int length)
         {
-            Console.WriteLine("Fibonacci sequence from 0 to "+length+":");
+            Console.WriteLine("Fibonacci sequence from 0 to " + length + ":");
             foreach (int i in febSeq)
             {
                 Console.WriteLine(i);
@@ -37,20 +37,29 @@ namespace Calculator
         {
             int a = 0;
             int b = 1;
-            febSeq.Add(a);
-            febSeq.Add(b);
+            _fibSeq.Add(a);
+            _fibSeq.Add(b);
 
             for (int i = 2; i < length; i++)
             {
                 int c = a + b;
                 if (c < length)
                 {
-                    febSeq.Insert(i, c);
+                    _fibSeq.Add(c);
                     a = b;
                     b = c;
                 }
             }
-            return febSeq;
+            return _fibSeq;
+        }
+
+        public void FibonacciStart(int length)
+        {
+            List<int> fibSeq = CreateSequence(length);
+            Console.WriteLine("- - - - - - - - - - ");
+            FibonacciPrint(fibSeq, length);
+            Console.WriteLine("- - - - - - - - - - ");
+            Console.WriteLine("Fibonacci sequence sum: " + FibonacciSequenceSum(fibSeq));
         }
     }
 }
