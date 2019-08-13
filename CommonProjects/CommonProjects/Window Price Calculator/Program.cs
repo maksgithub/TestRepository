@@ -11,8 +11,6 @@ namespace Window_Price_Calculator
         static void Main(string[] args)
         {
             Console.WriteLine(" Hello wrold");
-           
-        }
-      
-    }
+                   }
+          }
 }
