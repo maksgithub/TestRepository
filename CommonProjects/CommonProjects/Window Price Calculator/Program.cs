@@ -10,7 +10,39 @@ namespace Window_Price_Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" Hello wrold");
+            RunApplication();
+        }
+
+        private static void RunApplication()
+        {
+            while (true)
+            {
+                PrintMainMenu();
+                ConsoleKeyInfo keyInfo = Console.ReadKey();
+                if (keyInfo.Key == ConsoleKey.E)
+                {
+                    break;
+                }
+                if (keyInfo.Key == ConsoleKey.A)
+                {
+                    PrintAboutMenu();
+                }
+            }
+        }
+
+        private static void PrintAboutMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("Project name version 1.0");
+            Console.WriteLine("Press any key to return...");
+            Console.ReadKey();
+        }
+
+        static void PrintMainMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("Press E for exit");
+            Console.WriteLine("Press A for about");
         }
     }
 }
