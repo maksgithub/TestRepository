@@ -13,20 +13,20 @@ namespace Window_Price_Calculator
 
             while (true)
             {
+                Console.Clear();
                 Console.WriteLine("Press E for exit");
                 Console.WriteLine("Press A for about");
-                string key = Console.ReadLine();
-                if (key == "e")
+                ConsoleKeyInfo keyInfo = Console.ReadKey();
+                if (keyInfo.Key == ConsoleKey.E)
                 {
                     break;
                 }
-                if (key == "a")
+                if (keyInfo.Key == ConsoleKey.A)
                 {
                     Console.Clear();
                     Console.WriteLine("Project name version 1.0");
                     Console.WriteLine("Press any key to return...");
                     Console.ReadKey();
-                    Console.Clear();
                 }
 
             }
