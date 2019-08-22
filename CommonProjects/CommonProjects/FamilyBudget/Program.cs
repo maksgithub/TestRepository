@@ -10,8 +10,8 @@ namespace FamilyBudget
     {
         static void Main(string[] args)
         {
-            AppHelper helper = new AppHelper();
-            Application app = new Application(helper);
+            var helper = new AppHelper();
+            var app = new Application(helper);
             app.Run();
         }
     }
