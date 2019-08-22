@@ -10,10 +10,11 @@ namespace Window_Price_Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Press E for exit");
-            Console.WriteLine("Press A for about");
+
             while (true)
             {
+                Console.WriteLine("Press E for exit");
+                Console.WriteLine("Press A for about");
                 string key = Console.ReadLine();
                 if (key == "e")
                 {
@@ -23,8 +24,11 @@ namespace Window_Price_Calculator
                 {
                     Console.Clear();
                     Console.WriteLine("Project name version 1.0");
+                    Console.WriteLine("Press any key to return...");
+                    Console.ReadKey();
+                    Console.Clear();
                 }
-                
+
             }
         }
     }
