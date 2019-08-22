@@ -12,21 +12,19 @@ namespace Window_Price_Calculator
         {
             Console.WriteLine("Press E for exit");
             Console.WriteLine("Press A for about");
-            string key = "a";
-            bool x = key == "a";
-            while (x)
+            while (true)
             {
-                key = Console.ReadLine();
+                string key = Console.ReadLine();
                 if (key == "e")
                 {
                     break;
                 }
                 if (key == "a")
                 {
+                    Console.Clear();
                     Console.WriteLine("Project name version 1.0");
-                    Console.ReadKey();
                 }
-                x = key != "a";
+                
             }
         }
     }
