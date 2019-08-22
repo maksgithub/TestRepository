@@ -10,7 +10,6 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            
             Console.WriteLine("Mars homework!");
             Console.WriteLine("Enter edge for Fibonacci sequence: ");
             int length = Convert.ToInt32(Console.ReadLine());

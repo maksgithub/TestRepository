@@ -9,11 +9,11 @@ namespace Calculator
     class FibonacciSequence
     {
         readonly List<int> _fibSeq;
+
         public FibonacciSequence(int length)
         {
             _fibSeq = new List<int>(length);
         }
-
 
         public void FibonacciPrint(List<int> febSeq, int length)
         {
@@ -23,6 +23,7 @@ namespace Calculator
                 Console.WriteLine(i);
             }
         }
+
         public int FibonacciSequenceSum(List<int> febSeq)
         {
             int sum = 0;
