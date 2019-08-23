@@ -10,7 +10,12 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");            
+            Console.WriteLine("Mars homework!");
+            Console.WriteLine("Enter edge for Fibonacci sequence: ");
+            int length = Convert.ToInt32(Console.ReadLine());
+            FibonacciSequence fibonacci = new FibonacciSequence(length);
+            fibonacci.FibonacciStart(length);
+            Console.ReadKey();
         }
     }
 }
