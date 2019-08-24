@@ -29,7 +29,7 @@ namespace Window_Price_Calculator
                 }
                 if (keyInfo.Key == ConsoleKey.U)
                 {
-                    UserCreate;
+                    class UserCreate
                 }
             }
         }
