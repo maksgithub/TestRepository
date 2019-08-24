@@ -27,6 +27,10 @@ namespace Window_Price_Calculator
                 {
                     PrintAboutMenu();
                 }
+                if (keyInfo.Key == ConsoleKey.U)
+                {
+                    UserCreate;
+                }
             }
         }
 
@@ -43,6 +47,7 @@ namespace Window_Price_Calculator
             Console.Clear();
             Console.WriteLine("Press E for exit");
             Console.WriteLine("Press A for about");
+            Console.WriteLine("Press U to create user");
         }
     }
 }
