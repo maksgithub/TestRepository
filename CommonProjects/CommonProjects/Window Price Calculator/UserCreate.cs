@@ -8,7 +8,7 @@ namespace Window_Price_Calculator
 {
     class UserCreate
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Username();
         }
@@ -17,6 +17,14 @@ namespace Window_Price_Calculator
             Console.Clear();
             Console.WriteLine("Write user name and press Enter key");
             string name = Console.ReadLine();
+            while (true)
+            {
+                name = char.IsLetter();
+                if (name != char.IsLetter)
+                {
+                    Console.WriteLine("Only characters are allowed");
+                }
+            }
         }
     }
 }
