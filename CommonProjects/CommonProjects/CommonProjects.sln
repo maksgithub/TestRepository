@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections_Hashset", "Coll
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections__Dictionary", "Collections__Dictionary\Collections__Dictionary.csproj", "{0D36FFA1-3C13-4AB9-A2B4-025C54BA9A2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileWriter", "FileWriter\FileWriter.csproj", "{EDDB022E-8DCA-4301-BF81-4F3ACE556BA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{0D36FFA1-3C13-4AB9-A2B4-025C54BA9A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D36FFA1-3C13-4AB9-A2B4-025C54BA9A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D36FFA1-3C13-4AB9-A2B4-025C54BA9A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDDB022E-8DCA-4301-BF81-4F3ACE556BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDDB022E-8DCA-4301-BF81-4F3ACE556BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDDB022E-8DCA-4301-BF81-4F3ACE556BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDDB022E-8DCA-4301-BF81-4F3ACE556BA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{BCCE251B-4C20-45CE-8B52-EF98B7228E38} = {6ACAB786-9AB3-4CDC-BA12-6BA09ACD297A}
 		{0C335EF3-BEA9-49E1-A503-FDC601A808FD} = {6ACAB786-9AB3-4CDC-BA12-6BA09ACD297A}
 		{0D36FFA1-3C13-4AB9-A2B4-025C54BA9A2D} = {6ACAB786-9AB3-4CDC-BA12-6BA09ACD297A}
+		{EDDB022E-8DCA-4301-BF81-4F3ACE556BA3} = {6ACAB786-9AB3-4CDC-BA12-6BA09ACD297A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F12FEDF4-7DA7-41C4-A79C-62F9132E0805}
