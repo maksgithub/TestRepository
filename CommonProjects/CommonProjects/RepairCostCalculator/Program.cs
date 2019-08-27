@@ -4,15 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FamilyBudget
+namespace RepairCostCalculator
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var helper = new AppHelper();
-            var app = new Application(helper);
-            app.Run();
+            Console.WriteLine("Hello");
         }
     }
 }

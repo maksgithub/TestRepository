@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C1F62CDF-4626-4946-86CA-211A90A4D363}</ProjectGuid>
+    <ProjectGuid>{07328E63-DDB5-49A4-9525-E4733C39B1DC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FamilyBudget</RootNamespace>
-    <AssemblyName>FamilyBudget</AssemblyName>
+    <RootNamespace>RepairCostCalculator</RootNamespace>
+    <AssemblyName>RepairCostCalculator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppHelper.cs" />
-    <Compile Include="Application.cs" />
-    <Compile Include="GlobalStrings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
