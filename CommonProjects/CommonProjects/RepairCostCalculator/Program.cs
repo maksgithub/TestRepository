@@ -29,51 +29,58 @@ namespace RepairCostCalculator
                 {
                     Console.Clear();
                     Console.WriteLine("Write user name and press Enter key");
-                    
-                    User();
+                    CreateUser();
                     Console.ReadLine();
                 }
                 Console.Clear();
             }
-
         }
-        private static void User()
+        private static User CreateUser()
         {
             string name;
             name = Console.ReadLine();
-            if (CheckString(name) == false)
+            bool isNotLetter = !IsContainsOnlyLetters(name);
+            if (isNotLetter)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Only characters are allowed");
+                Console.WriteLine("\nOnly characters are allowed");
+
             }
+
             int lname = name.Length;
-            if (lname < 3 & lname > 15)
+            bool isNotLength = (lname < 3 || lname > 15);
+            if (isNotLength)
             {
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("Name must be longer than 3 characters and less than 15 characters");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("\nName must be longer than 3 characters and less than 15 characters");
+
             }
 
 
+            Console.ForegroundColor = ConsoleColor.White;
+            if (!isNotLength & !isNotLetter)
+            {
+                Console.WriteLine("User created");
+                return new User();
+            }
+            else
+            {
+                Console.WriteLine("User not created");
+                return null;
+            }
 
         }
-        static bool CheckString(string name)
+        static bool IsContainsOnlyLetters(string name)
         {
             for (int i = 0; i < name.Length; ++i)
             {
-                if (char.IsLetter(name[i]))
+                char c = name[i];
+                if (!char.IsLetter(c))
                 {
-                    return true;
+                    return false;
                 }
             }
-
-            return false;
+            return true;
         }
-
-
-
-
-
-
-
     }
 }
