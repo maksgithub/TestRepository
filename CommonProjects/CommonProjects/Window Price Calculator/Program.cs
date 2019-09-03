@@ -29,7 +29,7 @@ namespace Window_Price_Calculator
                 }
                 if (keyInfo.Key == ConsoleKey.U)
                 {
-                    UserCreate;
+                    Username();
                 }
             }
         }
@@ -37,7 +37,7 @@ namespace Window_Price_Calculator
         private static void PrintAboutMenu()
         {
             Console.Clear();
-            Console.WriteLine("Project name version 1.0");
+            Console.WriteLine("Windows Price calcuator version 1.1");
             Console.WriteLine("Press any key to return...");
             Console.ReadKey();
         }
@@ -49,5 +49,13 @@ namespace Window_Price_Calculator
             Console.WriteLine("Press A for about");
             Console.WriteLine("Press U to create user");
         }
+        private static void Username()
+        {
+            Console.Clear();
+            Console.WriteLine("Write user name and press Enter key");
+            string name = Console.ReadLine();
+
+        }
     }
 }
+
