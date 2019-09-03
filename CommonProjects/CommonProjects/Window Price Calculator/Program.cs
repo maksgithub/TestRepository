@@ -29,7 +29,7 @@ namespace Window_Price_Calculator
                 }
                 if (keyInfo.Key == ConsoleKey.U)
                 {
-                    Username();
+                    CreateUser();
                 }
             }
         }
@@ -49,11 +49,26 @@ namespace Window_Price_Calculator
             Console.WriteLine("Press A for about");
             Console.WriteLine("Press U to create user");
         }
-        private static void Username()
+
+        private static void CreateUser()
+        {
+            LengthChek();
+        }
+
+        private static void LengthChek()
         {
             Console.Clear();
             Console.WriteLine("Write user name and press Enter key");
             string name = Console.ReadLine();
+            int n = name.Length;
+            if (n < 3 || n > 15)
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Name must be longer than 3 characters and less than 15 characters");
+                Console.ReadKey();
+                Console.ForegroundColor = ConsoleColor.White;
+            }
 
         }
     }
