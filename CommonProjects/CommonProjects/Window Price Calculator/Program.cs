@@ -52,14 +52,15 @@ namespace Window_Price_Calculator
 
         private static void CreateUser()
         {
-            LengthChek();
-        }
-
-        private static void LengthChek()
-        {
             Console.Clear();
             Console.WriteLine("Write user name and press Enter key");
             string name = Console.ReadLine();
+            LengthCheck(name);
+            IsContainsOnlyLetters(name);
+        }
+
+        private static void LengthCheck(string name)
+        {
             int n = name.Length;
             if (n < 3 || n > 15)
             {
@@ -71,6 +72,32 @@ namespace Window_Price_Calculator
             }
 
         }
+        private static void IsContainsOnlyLetters(string name)
+        {
+            bool m = true;
+            for (int i = 0; i < name.Length; ++i)
+            {
+                char c = name[i];
+                if (!char.IsLetter(c))
+                {
+                    m = false;
+                    Console.WriteLine("Only characters are allowed");
+                    break;
+                }
+            }
+            if (m == true)
+            {
+                Console.WriteLine("User created");
+            }
+            else
+            {
+                Console.WriteLine("Only characters are allowed");
+            }
+            
+            Console.ReadKey();
+        }
+        
     }
 }
+
 
