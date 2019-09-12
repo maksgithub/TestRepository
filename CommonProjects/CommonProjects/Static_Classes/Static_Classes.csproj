@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0D36FFA1-3C13-4AB9-A2B4-025C54BA9A2D}</ProjectGuid>
+    <ProjectGuid>{0B06BF58-9D97-4981-AC1D-812E0333750C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Collections__Dictionary</RootNamespace>
-    <AssemblyName>Collections__Dictionary</AssemblyName>
+    <RootNamespace>Static_Classes</RootNamespace>
+    <AssemblyName>Static_Classes</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PList, Version=0.1.4109.38751, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\plist.net.1.0\lib\Net35\PList.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,12 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

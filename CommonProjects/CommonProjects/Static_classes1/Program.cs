@@ -6,7 +6,9 @@ namespace Static_classes1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Person max = new Person();
+            max.Jump();
+            Person.Swim();
         }
     }
 }
