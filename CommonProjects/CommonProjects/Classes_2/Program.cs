@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PListSerializer.Core;
 
-namespace Calculator
+namespace Classes_2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var d = new Deserializer();
-            var t = d.Deserialize<Class1>(null);
+            string name = Console.ReadLine();
+
+            Person max = new Person(name);
+
+            max.SetName();
+
+            max.Run(5);
             Console.ReadKey();
         }
-    }
-
-    internal class Class1
-    {
     }
 }
