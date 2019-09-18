@@ -55,48 +55,51 @@ namespace Window_Price_Calculator
             Console.Clear();
             Console.WriteLine("Write user name and press Enter key");
             string name = Console.ReadLine();
-            LengthCheck(name);
-            IsContainsOnlyLetters(name);
-        }
-
-        private static void LengthCheck(string name)
-        {
-            int n = name.Length;
-            if (n < 3 || n > 15)
+            bool isLenhthValid = LengthCheck(name);
+            if (isLenhthValid)
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Name must be longer than 3 characters and less than 15 characters");
-                Console.ReadKey();
-                Console.ForegroundColor = ConsoleColor.White;
             }
+            Console.ForegroundColor = ConsoleColor.White;
+            bool isOnlyLetters = !IsContainsOnlyLetters(name);
+            if (isOnlyLetters)
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Only characters are allowed");
+
+            }
+            if (!isOnlyLetters & !isLenhthValid)
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("User created");
+            }
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.ReadKey();
+        }
+
+        private static bool LengthCheck(string name)
+        {
+            int n = name.Length;
+            bool lenth = n < 3 || n > 15;
+            return lenth;
 
         }
-        private static void IsContainsOnlyLetters(string name)
+        static bool IsContainsOnlyLetters(string name)
         {
-            bool m = true;
             for (int i = 0; i < name.Length; ++i)
             {
                 char c = name[i];
                 if (!char.IsLetter(c))
                 {
-                    m = false;
-                    Console.WriteLine("Only characters are allowed");
-                    break;
+                    return false;
                 }
             }
-            if (m == true)
-            {
-                Console.WriteLine("User created");
-            }
-            else
-            {
-                Console.WriteLine("Only characters are allowed");
-            }
-            
-            Console.ReadKey();
+            return true;
         }
-        
     }
 }
 
