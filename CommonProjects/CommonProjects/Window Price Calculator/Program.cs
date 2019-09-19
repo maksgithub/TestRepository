@@ -69,13 +69,20 @@ namespace Window_Price_Calculator
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Only characters are allowed");
-
             }
+            Console.ForegroundColor = ConsoleColor.White;
             if (!isOnlyLetters & !isLenhthValid)
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("User created");
+            }
+            else
+            {
+                Console.WriteLine("User not created");
+                Console.WriteLine("Press any key to retry");
+                Console.ReadKey();
+                CreateUser();
             }
             Console.ForegroundColor = ConsoleColor.White;
             Console.ReadKey();
