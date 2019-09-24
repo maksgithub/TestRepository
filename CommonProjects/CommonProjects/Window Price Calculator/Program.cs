@@ -50,7 +50,7 @@ namespace Window_Price_Calculator
             Console.WriteLine("Press U to create user");
         }
 
-        private static void CreateUser()
+        private static User CreateUser()
         {
             Console.Clear();
             Console.WriteLine("Write user name and press Enter key");
@@ -70,22 +70,25 @@ namespace Window_Price_Calculator
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Only characters are allowed");
             }
+
             Console.ForegroundColor = ConsoleColor.White;
             if (!isOnlyLetters & !isLenhthValid)
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("User created");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.ReadKey();
+                return new User(name);
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("User not created");
                 Console.WriteLine("Press any key to retry");
                 Console.ReadKey();
-                CreateUser();
+                return null;
             }
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.ReadKey();
         }
 
         private static bool LengthCheck(string name)
