@@ -6,15 +6,15 @@ namespace Static_Classes
     {
         static void Main(string[] args)
         {
-            Person max = new Person("Max", 26);
-            max.Jump();
-            Console.WriteLine(max.Calculate(56));
+            Person max = new Person("Max", 14);
 
-            Person ivan = new Person("Max", 26);
-            ivan.Jump();
-            int a = ivan.Calculate(44);
-            Console.WriteLine(a);
+            Person ivan = new Person("Ivan", 6);
 
+            Console.WriteLine(max.Name);
+            Console.WriteLine(ivan.Name);
+
+            int m = Person.Calculate();
+            Console.WriteLine(m);
             Console.ReadLine();
         }
     }

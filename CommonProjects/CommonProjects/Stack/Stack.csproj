@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{66D654FB-EE25-437E-B190-08EDD1F14BBD}</ProjectGuid>
+    <ProjectGuid>{2AE65944-AD9A-4C52-9774-37C691948829}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Window_Price_Calculator</RootNamespace>
-    <AssemblyName>Window Price Calculator</AssemblyName>
+    <RootNamespace>Stack</RootNamespace>
+    <AssemblyName>Stack</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

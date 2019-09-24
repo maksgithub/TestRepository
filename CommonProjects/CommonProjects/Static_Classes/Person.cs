@@ -5,10 +5,12 @@ namespace Static_Classes
     class Person     
     {
         public string Name { get; set; }
+        public static int Age { get; set; }
 
         public Person(string name, int age)
         {
-            this.Name = name;
+            Name = name;
+            Age = age;
         }
 
         public void Jump()
@@ -21,9 +23,9 @@ namespace Static_Classes
             Console.WriteLine(Name + "Swim");
         }
 
-        public int Calculate(int age)
+        public static int Calculate()
         {
-            return age * 2;
+            return Age * 2;
         }
     }
 }
