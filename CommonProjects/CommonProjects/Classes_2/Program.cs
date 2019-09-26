@@ -10,14 +10,8 @@ namespace Classes_2
     {
         static void Main(string[] args)
         {
-            string name = Console.ReadLine();
-
-            Person max = new Person(name);
-
-            max.SetName();
-
-            max.Run(5);
-            Console.ReadKey();
+            Car car = new Car("red", 28);
+            car.Model = "Lada";
         }
     }
 }
