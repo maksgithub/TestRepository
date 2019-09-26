@@ -11,6 +11,7 @@ namespace RepairCostCalculator
     {
         static void Main(string[] args)
         {
+            FilesHelper obueqt = new FilesHelper();
             while (true)
             {
                 Console.WriteLine("Press E for exit\nPress A for about\nPress U to create user");
@@ -31,7 +32,12 @@ namespace RepairCostCalculator
                     case ConsoleKey.U:
                         {
                             Console.WriteLine("Write user name and press Enter key");
-                            CreateUser();
+                            User user = CreateUser();
+                            string path = @"C:\Users\Kaptan\source\repos\TestRepository\CommonProjects\CommonProjects\RepairCostCalculator\fileUser.txt";
+                            if (user!= null)
+                            {
+                                obueqt.AppendTextToFile(path, user.Name);
+                            }
                             break;
                         }
                 }
@@ -59,7 +65,8 @@ namespace RepairCostCalculator
             if (!isNotLength & !isNotLetter)
             {
                 Console.WriteLine("User created");
-                return new User();
+                User user = new User(name);
+                return user;
             }
             else
             {
