@@ -11,14 +11,11 @@ namespace Empty
     {
         static void Main(string[] args)
         {
-            Rectangle rect1 = new Rectangle(3, 4);
-            Rectangle rect2 = new Rectangle(3, 4);
-            Circle circ = new Circle(3);
+            Order order1 = new Order();
+            order1.Print();
 
-            rect1.PrintSquare();
-            rect2.PrintSquare();
-            circ.PrintSquare();
-
+            Console.WriteLine(order1.Count);
+            Console.WriteLine(order1._number);
             Console.Read();
         }
     }

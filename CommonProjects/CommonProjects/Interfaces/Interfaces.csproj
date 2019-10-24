@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2F4ACA9A-F978-4B57-B1C0-C5773639BABB}</ProjectGuid>
+    <ProjectGuid>{36C26077-7595-4256-A591-88FD75E668CF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Empty</RootNamespace>
-    <AssemblyName>Empty</AssemblyName>
+    <RootNamespace>Interfaces</RootNamespace>
+    <AssemblyName>Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Circle.cs" />
-    <Compile Include="Classes\Rectangle.cs" />
-    <Compile Include="Classes\Shape.cs" />
-    <Compile Include="Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
