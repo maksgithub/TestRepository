@@ -11,13 +11,11 @@ namespace Interfaces
         static void Main(string[] args)
         {
             
-            IStudent studen1 = new BadStudent("123");
-            IStudent studen2 = new GoodStudent("345");
+           //Student studen1 = new BadStudent();
+            Student studen2 = new GoodStudent();
 
-            Console.WriteLine(studen1.GetMark());
-
+            //studen1.GoToSchool();
             studen2.GoToSchool();
-            Console.WriteLine(studen2.GetMark());
 
             Console.Read();
         }

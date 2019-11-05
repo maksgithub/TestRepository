@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesInheritance", "Class
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{36C26077-7595-4256-A591-88FD75E668CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "Recursion\Recursion.csproj", "{4798A1E7-1094-4DB6-A0FF-73FC7037AA30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{36C26077-7595-4256-A591-88FD75E668CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36C26077-7595-4256-A591-88FD75E668CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36C26077-7595-4256-A591-88FD75E668CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4798A1E7-1094-4DB6-A0FF-73FC7037AA30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4798A1E7-1094-4DB6-A0FF-73FC7037AA30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4798A1E7-1094-4DB6-A0FF-73FC7037AA30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4798A1E7-1094-4DB6-A0FF-73FC7037AA30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -150,6 +156,7 @@ Global
 		{D142AF05-074A-40E5-8CA1-71DDE391ED5C} = {6ACAB786-9AB3-4CDC-BA12-6BA09ACD297A}
 		{EA58E12B-4EE8-4FAB-B4F9-321896DACE24} = {6ACAB786-9AB3-4CDC-BA12-6BA09ACD297A}
 		{36C26077-7595-4256-A591-88FD75E668CF} = {6ACAB786-9AB3-4CDC-BA12-6BA09ACD297A}
+		{4798A1E7-1094-4DB6-A0FF-73FC7037AA30} = {6ACAB786-9AB3-4CDC-BA12-6BA09ACD297A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F12FEDF4-7DA7-41C4-A79C-62F9132E0805}

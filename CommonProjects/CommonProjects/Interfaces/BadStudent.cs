@@ -6,24 +6,13 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    class BadStudent : IStudent
+    class BadStudent : Student
     {
+        public override string Name => "BadStudent";
 
-        public BadStudent(string name)
+        public override void GoToSchool()
         {
-            Name = name;
-        }
-
-        public string Name { get; }
-
-        public void GoToSchool()
-        {
-            Console.WriteLine(Name + " Bad Go to school");
-        }
-
-        public int GetMark()
-        {
-            return 1;
+            Console.WriteLine("Bad Student Go school");
         }
     }
 }

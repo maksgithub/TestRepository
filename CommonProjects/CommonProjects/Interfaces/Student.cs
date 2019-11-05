@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    class GoodStudent : Student
+    public abstract class Student
     {
-        public override void GoToSchool()
+        public virtual string Name => "Student";
+
+        public virtual void GoToSchool()
         {
-            Console.WriteLine();
+            Console.WriteLine("Student Go school");
         }
     }
 }
