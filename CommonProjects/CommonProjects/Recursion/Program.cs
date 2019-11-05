@@ -12,7 +12,10 @@ namespace Recursion
         static void Main(string[] args)
         {
             //TestDirectoryInfo();
-            var di = new DirectoryInfo(@"D:\dev\TestRepository\CommonProjects\CommonProjects\Recursion");
+            var di = new DirectoryInfo(@"D:\dev\TestRepository\
+CommonProjects\CommonProjects\Recursion");
+
+
             Console.WriteLine(IsContainsDirectoryName(di, "dev3"));
             Console.ReadKey();
         }
