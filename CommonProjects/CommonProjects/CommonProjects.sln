@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "Recursion\Recu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{E61C858D-FBAC-454E-B7FF-0C547A49EA3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeCast", "TypeCast\TypeCast.csproj", "{09EA8F87-E0F4-406A-9220-73E2B95A8836}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{E61C858D-FBAC-454E-B7FF-0C547A49EA3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E61C858D-FBAC-454E-B7FF-0C547A49EA3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E61C858D-FBAC-454E-B7FF-0C547A49EA3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09EA8F87-E0F4-406A-9220-73E2B95A8836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09EA8F87-E0F4-406A-9220-73E2B95A8836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09EA8F87-E0F4-406A-9220-73E2B95A8836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09EA8F87-E0F4-406A-9220-73E2B95A8836}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,6 +170,7 @@ Global
 		{36C26077-7595-4256-A591-88FD75E668CF} = {6ACAB786-9AB3-4CDC-BA12-6BA09ACD297A}
 		{4798A1E7-1094-4DB6-A0FF-73FC7037AA30} = {6ACAB786-9AB3-4CDC-BA12-6BA09ACD297A}
 		{E61C858D-FBAC-454E-B7FF-0C547A49EA3B} = {6ACAB786-9AB3-4CDC-BA12-6BA09ACD297A}
+		{09EA8F87-E0F4-406A-9220-73E2B95A8836} = {6ACAB786-9AB3-4CDC-BA12-6BA09ACD297A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F12FEDF4-7DA7-41C4-A79C-62F9132E0805}

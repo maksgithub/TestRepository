@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,30 +11,25 @@ namespace ExtensionMethods
     {
         static void Main(string[] args)
         {
-            string a = "Fffff";
-            var i = a.GetCount('f');
-            Console.WriteLine(i);
+            try
+            {
+                List<int> list = new List<int>();
+                list.Add(42);
+                list.Add(23);
 
-            var l = new List<int>(10000000);
-            l.Add(1);
-            l.Add(1);
-            l.Add(1);
-            l.Add(1);
-            l.Add(1);
-            l.Add(56);
-            l.Add(1);
-            l.Add(1);
-            l.Add(1);
-            l.Add(1);
-            l.Add(1);
-            l.Add(1);
-            l.Add(1);
-            l.Add(1);
-            l.Add(1);
-            l.Add(1);
-            l.Add(1);
-            Console.WriteLine(l[5]);
-            Console.ReadLine();
+
+                var di = new DirectoryInfo(@"C:\Users\MARS\source\repos1");
+
+                if(di.Exists)
+                {
+                    var f = di.EnumerateFiles();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
     }
 }
