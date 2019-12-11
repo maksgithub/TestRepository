@@ -6,10 +6,12 @@
         xmlns:local="clr-namespace:UsersStorage"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel Orientation="Vertical" Margin="0, 100,0,0">
+    <StackPanel Orientation="Vertical" Height="374">
         <TextBox Name="TextBoxName" Width="200" Margin="10"/>
         <TextBox Name="TextBoxPassword" Width="200"  Margin="10"/>
-        <Button Content="Login" Width="200"  Margin="10" Click="ButtonBase_OnClick"/>
+        <Button Content="Login" Width="62"  Margin="300,10,10,10" Click="ButtonBase_OnClick" RenderTransformOrigin="0.239,0.457" HorizontalAlignment="Left" />
+        <Button x:Name="search" Content="Search" Width="84" VerticalContentAlignment="Stretch" RenderTransformOrigin="0.857,0.509" Click="search_Click"/>
+        <Label x:Name="lableAnswer" Content="" Width="412" Background="#FFEEA7A7" RenderTransformOrigin="0.5,1.471" Height="104" VerticalContentAlignment="Stretch"/>
 
     </StackPanel>
 </Window>

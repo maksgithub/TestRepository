@@ -27,11 +27,24 @@ namespace UsersStorage
             _dbReactor = new DBReactor();
             _dbReactor.Open();
             InitializeComponent();
+            lableAnswer.Content = "Enter user Name and Password";
         }
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            _dbReactor.AddUser(TextBoxName.Text);
+            _dbReactor.AddUser(TextBoxName.Text.ToUpper(), TextBoxPassword.Text.ToUpper());
+            lableAnswer.Content = $"User {TextBoxName.Text} created";
+            TextBoxName.Clear();
+            TextBoxPassword.Clear();
+        }
+
+        private void search_Click(object sender, RoutedEventArgs e)
+        {
+            lableAnswer.Content = "";
+            if (TextBoxName.Text != "")
+            {
+                lableAnswer.Content = _dbReactor.Search(TextBoxName.Text.ToUpper());
+            }
         }
     }
 }
