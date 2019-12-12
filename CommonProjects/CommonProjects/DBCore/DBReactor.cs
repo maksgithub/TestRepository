@@ -18,7 +18,7 @@ namespace DBCore
             ExecuteQuery(createCommand);
         }
 
-        public void AddUser(string userName,string userPassword)
+        public void AddUser(string userName, string userPassword)
         {
             var command = $"INSERT INTO Users (Name,PassWord) VALUES ('{userName}','{userPassword}')";
             ExecuteQuery(command);
@@ -30,7 +30,7 @@ namespace DBCore
             SQLiteCommand command = _connection.CreateCommand();
             command.CommandText = txtQuery;
             command.ExecuteNonQuery();//выполняет запрос не подразумевающий возврат значений
-           
+
         }
         public string Search(string userName)
         {
@@ -42,11 +42,23 @@ namespace DBCore
             {
                 while (sql.Read())
                 {
-                    resOfSearch += $"User {userName} has {sql["ID"]} \n ";
+                    resOfSearch += $"User {userName} has ID {sql["ID"]} \n ";
                 }
             }
             else resOfSearch = "The search has not given any results";
             return resOfSearch;
+        }
+        public string UserCount()
+        {
+            SQLiteCommand command = _connection.CreateCommand();
+            command.CommandText = "SELECT COUNT (*) FROM Users";
+            string countUser = command.ExecuteScalar().ToString();
+            return countUser;
+        }
+        public void DeleteLastElement(string countUser)
+        {
+            var command = $"DELETE FROM Users WHERE ID = '{countUser}'";
+            ExecuteQuery(command);
         }
     }
 }

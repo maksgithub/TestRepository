@@ -12,6 +12,8 @@
         <Button Content="Login" Width="62"  Margin="300,10,10,10" Click="ButtonBase_OnClick" RenderTransformOrigin="0.239,0.457" HorizontalAlignment="Left" />
         <Button x:Name="search" Content="Search" Width="84" VerticalContentAlignment="Stretch" RenderTransformOrigin="0.857,0.509" Click="search_Click"/>
         <Label x:Name="lableAnswer" Content="" Width="412" Background="#FFEEA7A7" RenderTransformOrigin="0.5,1.471" Height="104" VerticalContentAlignment="Stretch"/>
+        <Button x:Name="count" Content="Count of Data Base" Click="count_Click"/>
+        <Button x:Name="DeleteLastEelement" Content="Delete last element" Click="DeleteLastEelement_Click"/>
 
     </StackPanel>
 </Window>

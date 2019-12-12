@@ -46,5 +46,16 @@ namespace UsersStorage
                 lableAnswer.Content = _dbReactor.Search(TextBoxName.Text.ToUpper());
             }
         }
+
+        private void count_Click(object sender, RoutedEventArgs e)
+        {
+            lableAnswer.Content = $"Count of data base {_dbReactor.UserCount()}";
+        }
+
+        private void DeleteLastEelement_Click(object sender, RoutedEventArgs e)
+        {
+            _dbReactor.DeleteLastElement(_dbReactor.UserCount());
+           lableAnswer.Content=$"Laste elemrnt is delete";
+        }
     }
 }
