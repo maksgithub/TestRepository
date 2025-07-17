@@ -30,3 +30,7 @@ _ReSharper*/
 .vs/
 #Nuget packages folder
 packages/
+
+# Ignore Jekyll build output
+_site/
+Gemfile.lock
